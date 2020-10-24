@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.drawer.anewtemp.ac.ZBodyActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Your letter will look like this:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterHeading"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- ///////////  SALUTATION AND BODY    //////////// -->
+        <TextView
+            android:gravity="center"
+            android:text="Salutation"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterSal"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="[SALUTATION]"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="(Part 1) Body 1st Sentence: What is your name?"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterSenderName"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:text="I, [YOUR NAME], "
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="(Part 2) Body 1st Sentence: Who is your representative?"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterRep"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="authorize [REPRESENTATIVE] "
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="(Part 3) Body 1st Sentence: Specify the representatives duties clearly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/txtLetterClaim"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:hint="e.g.  to claim my TOR on by behalf."
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="Body 2nd Sentence: What is your reason?"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/txtLetterReason"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:background="@drawable/style_edit_text_message"
+            android:hint="e.g.  I am unable to attend to your office due to [REASON]."
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</ScrollView>

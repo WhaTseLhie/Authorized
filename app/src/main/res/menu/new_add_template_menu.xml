@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add"
+        android:title="+ Empty"
+        android:icon="@drawable/ic_menu_empty_template" />
+
+    <item
+        android:id="@+id/autoContent"
+        android:title="+ Auto Content"
+        android:icon="@drawable/ic_menu_auto_content_template" />
+</menu>

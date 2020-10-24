@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.adminot.AdminOTActivity">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:background="@color/blue"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtAdd"
+            android:padding="15dp"
+            android:layout_weight="7"
+            android:hint="Add Salutation"
+            android:drawablePadding="8dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:src="@drawable/ic_add"
+            android:background="@color/white"
+            android:layout_weight="3"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

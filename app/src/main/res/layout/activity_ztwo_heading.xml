@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.drawer.anewtemp.ac.ZTwoHeadingActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Your letter will look like this:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterHeading"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- ///////////  RECIPIENT    //////////// -->
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="What is the recipient's name?"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/llRecipient"
+            android:orientation="horizontal"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtLetterRecName"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="[RECIPIENT]"
+                android:background="@drawable/style_edit_text_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/txtLetterRecName"-->
+                <!--android:paddingStart="10dp"-->
+                <!--android:paddingEnd="10dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_weight="3"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="Click to select Recipient"-->
+                <!--android:background="@drawable/style_edit_text_message"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ivRec"-->
+                <!--android:src="@drawable/ic_profile"-->
+                <!--android:layout_weight="7"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp" />-->
+        </LinearLayout>
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="What is the recipient's street address? (Optional)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/txtLetterRecSt"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:hint="e.g.  Colon St."
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="What is the recipient's city? (Optional)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/txtLetterRecCity"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:hint="e.g.  Cebu City"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="What is the recipient's province? (Optional)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/txtLetterRecProvince"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:hint="e.g.  Cebu"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="What is the recipient's zip code? (Optional)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/txtLetterRecZip"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:hint="e.g.  6000"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</ScrollView>

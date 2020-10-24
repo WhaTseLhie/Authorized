@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/scrollView"
+    tools:context=".main.drawer.areceive.ViewReceiveActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--
+        <TextView
+            android:id="@+id/txtDate"
+            android:text="Date"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/style_text_view_border"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:text="Address"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/style_text_view_border"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtRecipient"
+            android:text="Recipient"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/style_text_view_border"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtReason"
+            android:text="Content"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/style_text_view_border"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/txtClosing"
+            android:text="Closing"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_text_view_border"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivSignature"
+            android:src="@drawable/delete_ic_sample_signature"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+            -->
+
+        <!--<TextView
+            android:id="@+id/txtSignature"
+            android:text="Signature"
+            android:textSize="20sp"
+            android:padding="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_text_view_border"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:id="@+id/txtYourName"
+            android:text="Your Name"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_text_view_border"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:background="@drawable/style_button_new_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Accept Request" />
+
+            <Button
+                android:id="@+id/btnDecline"
+                android:background="@drawable/style_button_disapprove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Decline Request" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:background="@drawable/style_button_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:text="Request Transaction Finish" />
+    </LinearLayout>
+</ScrollView>

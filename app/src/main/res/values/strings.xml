@@ -1,0 +1,61 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Authoriz.ed</string>
+
+    <!-- Mobile Phone Location Spinner -->
+    <string-array name="location">
+        <item>Australia</item>
+        <item>Canada</item>
+        <item>Philippines</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+    </string-array>
+    <string-array name="letterSort">
+        <item>PENDING</item>
+        <item>ACCEPTED</item>
+        <item>DECLINED</item>
+        <item>FINISHED</item>
+    </string-array>
+    <string-array name="letterType">
+        <item>LOA for Collecting Documents</item>
+        <item>LOA for Picking-up Package</item>
+        <item>LOA for Birth Certificate</item>
+        <item>LOA for Transcript of Records</item>
+    </string-array>
+
+    <!--
+    < 1st Subscription >
+    <string-array name="firstSub">
+        <item>30 Days Free Trial</item>
+        <item>\u20B1 99/30 Days + 30 Days Free Trial</item>
+        <item>\u20B1 199/2 Months + 30 Days Free Trial</item>
+        <item>\u20B1 499/6 Months + 30 Days Free Trial</item>
+        <item>\u20B1 999/1 Year + 30 Days Free Trial</item>
+    </string-array>
+    -->
+
+    <!-- Letter Type Spinner -->
+    <string-array name="type">
+        <item>TOR Authorization Letter</item>
+        <item>Loan Authorization Letter</item>
+    </string-array>
+
+    <string-array name="recipientSort">
+        <item>Name</item>
+        <item>Rating</item>
+        <item>Previous Recipient</item>
+    </string-array>
+
+
+    <!-- Landing Screen -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_admin_landing_screen">AdminLandingScreenActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>

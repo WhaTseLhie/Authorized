@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtLetterGreetings"
+            android:hint="Greetings,"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:inputType="textMultiLine"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/ivShowSample"
+            android:src="@drawable/ic_arrow_drop_down"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--<ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <Button
+        android:id="@+id/btnOk"
+        android:text="Save"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/style_button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

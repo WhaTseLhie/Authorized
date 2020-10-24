@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scroll1"
+    android:layout_marginBottom="30dp"
+    tools:context=".main.drawer.arep.UpdateRepIdActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lnrImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout">
+
+            <Button
+                android:id="@+id/btnAddPhotos"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/style_button_confirm"
+                android:layout_height="wrap_content"
+                android:text="Add Identifications"/>
+
+            <Button
+                android:id="@+id/btnSaveImages"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/style_button_new_account"
+                android:layout_height="wrap_content"
+                android:text="Save"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

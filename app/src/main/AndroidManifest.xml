@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pardillo.john.jv.authorized">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/authorized_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/authorized_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- SPLASH SCREEN -->
+        <activity
+            android:name=".splash.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ADMIN -->
+        <activity
+            android:name=".admin.admain.AdminLandingScreenActivity"
+            android:label="Authoriz.ed"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- TEMPLATE MANAGEMENT VERSION 2 -->
+        <activity
+            android:name=".admin.admintemp.NewAdminViewTemplateActivity"
+            android:label="View Template"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+        <activity
+            android:name=".admin.admintemp.NewAdminMyTemplateActivity"
+            android:label="My Templates"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+        <activity
+            android:name=".admin.admintemp.NewAdminAddTemplateDetailsActivity"
+            android:label="Add Template Details"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admintemp.NewAdminMyTemplateActivity" />
+        <activity
+            android:name=".admin.admintemp.NewAdminAddTemplateActivity"
+            android:label="Add Template Content"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admintemp.NewAdminAddTemplateDetailsActivity" />
+        <activity
+            android:name=".admin.admintemp.NewAdminViewMyTemplateActivity"
+            android:label="View My Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admintemp.NewAdminMyTemplateActivity" />
+        <activity
+            android:name=".admin.admintemp.NewAdminUpdateTemplateActivity"
+            android:label="Update Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admintemp.NewAdminViewMyTemplateActivity" />
+        <activity
+            android:name=".admin.admintemp.NewAdminValidateAddTemplateActivity"
+            android:label="Validate Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admintemp.NewAdminAddTemplateActivity" />
+        <activity
+            android:name=".admin.admintemp.NewAdminValidateUpdateTemplateActivity"
+            android:label="Validate Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admintemp.NewAdminUpdateTemplateActivity" />
+
+        <!-- ADMIN CREATE LETTER -->
+        <activity
+            android:name=".admin.admintemp.admincreate.NewAdminCreateLetterActivity"
+            android:label="Create Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.AdminViewTemplateActivity" />
+        <activity
+            android:name=".admin.admintemp.admincreate.NewAdminViewProgressActivity"
+            android:label="View Progress"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.NewCreateLetterActivity" />
+
+        <!-- ADMIN LETTER TAGS -->
+        <activity
+            android:name=".admin.adminot.AdminOTActivity"
+            android:label="Salutations"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+        <activity
+            android:name=".admin.adminct.AdminCTActivity"
+            android:label="Closing"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+
+        <!-- ADMIN PAYMENT -->
+        <activity
+            android:name=".admin.AdminPaymentActivity"
+            android:label="View User Payment"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+
+        <!-- ADMIN DB MANAGER -->
+        <activity
+            android:name=".admin.admain.AndroidDatabaseManager"
+            android:label="Database Manager"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+
+        <!-- TEMPLATE MANAGEMENT VERSION 1 -->
+        <activity
+            android:name=".admin.AdminViewTemplateActivity"
+            android:label="View Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+        <activity
+            android:name=".admin.AdminMyTemplateActivity"
+            android:label="My Templates"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+        <activity
+            android:name=".admin.AdminViewMyTemplateActivity"
+            android:label="View My Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.AdminMyTemplateActivity" />
+        <activity
+            android:name=".admin.AdminUpdateTemplateActivity"
+            android:label="Update My Template"
+            android:parentActivityName=".admin.AdminViewMyTemplateActivity" />
+        <activity
+            android:name=".admin.AdminAddTemplateActivity"
+            android:label="Create Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.AdminViewMyTemplateActivity" />
+        <activity
+            android:name=".admin.AdminFinishTemplateActivity"
+            android:label="Arrange Contents"
+            android:parentActivityName=".admin.AdminAddTemplateActivity" />
+
+        <!-- ADMIN VIEW ALL USER -->
+        <activity
+            android:name=".admin.vuser.AdminViewAllUserActivity"
+            android:label="View All User"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+        <activity
+            android:name=".admin.vuser.AdminViewUserActivity"
+            android:label="View User"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.vuser.AdminViewAllUserActivity" />
+        <activity
+            android:name=".admin.vuser.AdminViewUserReviewActivity"
+            android:label="Ratings and Review"
+            android:parentActivityName=".admin.vuser.AdminViewUserActivity" />
+
+        <!-- ADMIN VIEW ALL USER REPRESENTATIVES -->
+        <activity android:name=".admin.vuser.AdminViewUserRepActivity" />
+        <activity
+            android:name=".admin.vuser.AdminViewAllUserRepActivity"
+            android:label="View Representatives"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.vuser.AdminViewAllUserActivity" />
+        <activity
+            android:name=".admin.vuser.AdminViewRepActivity"
+            android:label="View Representative"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.vuser.AdminViewAllUserRepActivity" />
+
+        <!-- ADMIN VIEW ALL TRANSACTIONS -->
+        <activity
+            android:name=".admin.vsent.AdminViewAllUserSentActivity"
+            android:label="View All Transactions"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+        <activity
+            android:name=".admin.vsent.AdminViewUserSentActivity"
+            android:label="View Transaction"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.vsent.AdminViewAllUserSentActivity" />
+
+        <!-- MAIN CONTENT -->
+        <activity
+            android:name=".admin.maincontent.MainContentActivity"
+            android:label="Main Contents"
+            android:parentActivityName=".admin.admain.AdminLandingScreenActivity" />
+        <activity
+            android:name=".admin.maincontent.ViewMainContentActivity"
+            android:label="View Content"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.maincontent.MainContentActivity" />
+        <activity
+            android:name=".admin.maincontent.AddMainContentActivity"
+            android:label="Add Content"
+            android:parentActivityName=".admin.maincontent.ViewMainContentActivity" />
+        <activity
+            android:name=".admin.maincontent.UpdateMainContentActivity"
+            android:label="Update Content"
+            android:parentActivityName=".admin.maincontent.ViewMainContentActivity" />
+        <!--
+        <activity
+            android:name=".admin.AdminActivity"
+            android:label="All Templates" />
+        <activity
+            android:name=".admin.AdminViewTemplateActivity"
+            android:label="View Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.AdminActivity" />
+        <activity
+            android:name=".admin.AdminMyTemplateActivity"
+            android:label="My Templates"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.AdminActivity" />
+        <activity
+            android:name=".admin.AdminViewMyTemplateActivity"
+            android:label="View My Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.AdminMyTemplateActivity" />
+        <activity
+            android:name=".admin.AdminAddTemplateActivity"
+            android:label="Create Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".admin.AdminViewMyTemplateActivity" />
+        <activity
+            android:name=".admin.AdminFinishTemplateActivity"
+            android:label="Arrange Contents"
+            android:parentActivityName=".admin.AdminAddTemplateActivity" />
+        -->
+
+
+        <!-- LOGIN ACTIVITY -->
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="Sign in to Authoriz.ed" />
+
+        <!-- REGISTER ACTIVITIES -->
+        <activity
+            android:name=".register.anew.ANewRegisterActivity"
+            android:label="Create Account"
+            android:parentActivityName=".login.LoginActivity" />
+        <!-- PREVIOUS REGISTER ACTIVITIES -->
+        <activity
+            android:name=".register.RegisterActivity"
+            android:label="Create Account"
+            android:parentActivityName=".login.LoginActivity" />
+        <activity
+            android:name=".register.NameActivity"
+            android:label="Name"
+            android:parentActivityName=".register.RegisterActivity" />
+        <activity
+            android:name=".register.MobileNumberActivity"
+            android:label="Mobile Number"
+            android:parentActivityName=".register.NameActivity" />
+        <activity
+            android:name=".register.GenderActivity"
+            android:label="Gender"
+            android:parentActivityName=".register.MobileNumberActivity" />
+        <activity
+            android:name=".register.PasswordActivity"
+            android:label="Password"
+            android:parentActivityName=".register.GenderActivity" />
+        <activity
+            android:name=".register.SignatureActivity"
+            android:label="Digital Signature"
+            android:parentActivityName=".register.PasswordActivity" />
+        <activity
+            android:name=".register.anew.SignActivity"
+            android:label="Generate Signature"
+            android:parentActivityName=".register.SignatureActivity" />
+
+        <!-- LANDING SCREEN -->
+        <activity
+            android:name=".main.LandingScreenActivity"
+            android:label="Authoriz.ed"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- CREATE LETTER ACTIVITIES -->
+        <activity
+            android:name=".main.letter.NewUserViewTemplateActivity"
+            android:label="View Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.letter.NewUserCreateLetterActivity"
+            android:label="Create Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.NewUserViewTemplateActivity" />
+        <activity
+            android:name=".main.letter.recipient.LetterRecipientActivity"
+            android:label="Choose Recipient"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.NewUserCreateLetterActivity" />
+        <activity
+            android:name=".main.letter.recipient.ViewRecipientActivity"
+            android:label="Recipient&apos;s Info"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.recipient.LetterRecipientActivity" />
+        <activity
+            android:name=".main.letter.recipient.ViewRecipientReviewActivity"
+            android:label="Ratings and Review"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.recipient.ViewRecipientActivity" />
+        <activity
+            android:name=".main.letter.NewUserViewProgressActivity"
+            android:label="View Letter Progress"
+            android:launchMode="singleTop" />
+        <!-- android:parentActivityName=".main.letter.NewUserCreateLetterActivity" /> -->
+        <activity android:name=".main.letter.content.ContentActivity" />
+        <activity
+            android:name=".main.letter.representative.LetterRepresentativeActivity"
+            android:label="Choose Representative"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.NewUserCreateLetterActivity" />
+        <activity
+            android:name=".main.letter.representative.LetterAddRepActivity"
+            android:label="Add Representative"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.representative.LetterRepresentativeActivity" />
+        <activity android:name=".main.letter.representative.LetterCustomPhotoGalleryActivity" />
+        <activity
+            android:name=".main.letter.representative.ViewRepresentativeActivity"
+            android:label="Rep&apos;s Info"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.representative.LetterRepresentativeActivity" />
+        <activity
+            android:name=".main.letter.NewUserOTActivity"
+            android:label="Choose Salutation"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.NewUserCreateLetterActivity" />
+        <activity
+            android:name=".main.letter.NewUserCTActivity"
+            android:label="Choose Closing"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.NewUserCreateLetterActivity" />
+
+        <!-- CREATE LETTER PREVIOUS VERSION -->
+        <activity
+            android:name=".main.letter.NewViewLetterActivity"
+            android:label="View Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.letter.NewCreateLetterActivity"
+            android:label="Create Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.letter.representative.NewViewProgressActivity"
+            android:label="View Letter Progress"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.letter.NewCreateLetterActivity" />
+        <activity
+            android:name=".main.letter.CreateLetterActivity"
+            android:label="Create Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.LandingScreenActivity" />
+
+        <!-- DRAWER ACTIVITIES -->
+        <activity
+            android:name=".main.drawer.aprofile.AProfileActivity"
+            android:label="Profile"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.drawer.aprofile.UpdateSignActivity"
+            android:label="Update Signature"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.aprofile.AProfileActivity" />
+        <activity
+            android:name=".main.drawer.aprofile.ViewReviewActivity"
+            android:label="Ratings and reviews"
+            android:parentActivityName=".main.drawer.aprofile.AProfileActivity" />
+        <activity
+            android:name=".main.drawer.ANotificationActivity"
+            android:label="Notifications"
+            android:parentActivityName=".main.LandingScreenActivity" />
+
+        <!-- REP ACTIVITY -->
+        <activity
+            android:name=".main.drawer.arep.ARepActivity"
+            android:label="Representatives"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.drawer.arep.ViewRepActivity"
+            android:label="Representative Info"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.arep.ARepActivity" />
+        <activity
+            android:name=".main.drawer.arep.AddRepActivity"
+            android:label="Add Representative"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.arep.ARepActivity" />
+        <activity android:name=".main.drawer.arep.CustomPhotoGalleryActivity" />
+        <activity
+            android:name=".main.drawer.arep.UpdateRepIdActivity"
+            android:label="Update Identifications"
+            android:parentActivityName=".main.drawer.arep.ViewRepActivity" />
+
+        <!-- RECEIVE ACTIVITY -->
+        <activity
+            android:name=".main.drawer.areceive.AReceiveActivity"
+            android:label="Receive Letters"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.drawer.areceive.NewViewUserReceiveActivity"
+            android:label="View Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.areceive.AReceiveActivity" />
+        <activity
+            android:name=".main.drawer.areceive.ViewReceiveRepActivity"
+            android:label="Representatives Info"
+            android:parentActivityName=".main.drawer.areceive.NewViewUserReceiveActivity" />
+        <!-- android:parentActivityName=".main.drawer.areceive.ViewReceiveActivity" /> -->
+        <activity
+            android:name=".main.drawer.areceive.ViewReceiveAuthActivity"
+            android:label="Recipient&apos;s Info"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.areceive.NewViewUserReceiveActivity" />
+        <!-- android:parentActivityName=".main.drawer.areceive.ViewReceiveActivity" /> -->
+        <activity
+            android:name=".main.drawer.areceive.ViewReceiveAuthReviewActivity"
+            android:label="Ratings and Review"
+            android:parentActivityName=".main.drawer.areceive.ViewReceiveAuthActivity" />
+        <activity
+            android:name=".main.drawer.areceive.ViewReceiveFeedbackActivity"
+            android:label="Transaction Info"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.areceive.NewViewUserReceiveActivity" />
+        <activity android:name=".main.drawer.areceive.ZUpdateFeedbackActivity"
+            android:label="Finish Request"
+            android:parentActivityName=".main.drawer.areceive.NewViewUserReceiveActivity" />
+        <!-- android:parentActivityName=".main.drawer.areceive.ViewReceiveActivity" /> -->
+        <!-- android:parentActivityName=".main.drawer.areceive.NewViewReceiveActivity" /> -->
+        <activity
+            android:name=".main.drawer.areceive.AddFeedbackActivity"
+            android:label="Add Transaction Info"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.areceive.ViewReceiveActivity" />
+        <!-- android:parentActivityName=".main.drawer.areceive.NewViewReceiveActivity" /> -->
+        <activity
+            android:name=".main.drawer.areceive.UpdateFeedbackActivity"
+            android:label="Update Transaction Info"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.areceive.ViewReceiveFeedbackActivity" />
+
+        <!-- RECEIVE PREVIOUS VERSION -->
+        <activity
+            android:name=".main.drawer.areceive.NewViewReceiveActivity"
+            android:label="View Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.areceive.AReceiveActivity" />
+        <activity
+            android:name=".main.drawer.areceive.ViewReceiveActivity"
+            android:label="View Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.areceive.AReceiveActivity" />
+
+        <!-- SENT ACTIVITY -->
+        <activity
+            android:name=".main.drawer.asent.ASentActivity"
+            android:label="Sent Letters"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.drawer.asent.NewViewUserSentActivity"
+            android:label="View Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.asent.ASentActivity" />
+        <activity
+            android:name=".main.drawer.asent.ViewSentFeedbackActivity"
+            android:label="Transaction Information"
+            android:parentActivityName=".main.drawer.asent.NewViewUserSentActivity" />
+        <!-- android:parentActivityName=".main.drawer.asent.NewViewSentActivity" /> -->
+
+
+        <!-- SENT PREVIOUS VERSION -->
+        <activity
+            android:name=".main.drawer.asent.NewViewSentActivity"
+            android:label="View Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.asent.ASentActivity" />
+        <activity
+            android:name=".main.drawer.asent.ViewSentActivity"
+            android:label="View Letter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.asent.ASentActivity" />
+
+        <!-- TO DELETE -->
+        <activity
+            android:name=".main.drawer.AViewSentActivity"
+            android:label="Show Sent Letter"
+            android:parentActivityName=".main.drawer.asent.ASentActivity" />
+
+        <!-- TEMPLATE ACTIVITY -->
+        <activity
+            android:name=".main.drawer.anewtemp.ATemplateActivity"
+            android:label="Templates"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.NewUserAddTemplateDetailsActivity"
+            android:label="Add Template Details"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.anewtemp.ATemplateActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.NewUserAddTemplateActivity"
+            android:label="Add Template Content"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.anewtemp.NewUserAddTemplateDetailsActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.NewUserValidateAddTemplateActivity"
+            android:label="Validate Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.anewtemp.NewUserAddTemplateActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.NewUserViewMyTemplateActivity"
+            android:label="View Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.anewtemp.ATemplateActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.NewUserUpdateTemplateActivity"
+            android:label="Update Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.anewtemp.NewUserViewMyTemplateActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.NewUserValidateUpdateTemplateActivity"
+            android:label="Validate Template"
+            android:launchMode="singleTop"
+            android:parentActivityName=".main.drawer.anewtemp.NewUserUpdateTemplateActivity" />
+
+        <!-- TEMPLATE ACTIVITIES PREVIOUS VERSION -->
+        <activity
+            android:name=".main.drawer.atemplate.ViewMyTemplateActivity"
+            android:label="View My Template"
+            android:parentActivityName=".main.drawer.anewtemp.ATemplateActivity" />
+        <activity
+            android:name=".main.drawer.atemplate.UpdateTemplateActivity"
+            android:label="Update My Template"
+            android:parentActivityName=".main.drawer.atemplate.ViewMyTemplateActivity" />
+        <activity
+            android:name=".main.drawer.atemplate.AddTemplateActivity"
+            android:label="Add Template"
+            android:parentActivityName=".main.drawer.anewtemp.ATemplateActivity" />
+        <activity
+            android:name=".main.drawer.atemplate.FinishTemplateActivity"
+            android:label="Arrange Contents"
+            android:parentActivityName=".main.drawer.atemplate.AddTemplateActivity" />
+
+        <!-- OTHERS -->
+        <activity
+            android:name=".main.drawer.AWriteSignatureActivity"
+            android:label="View Transaction Information"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity
+            android:name=".main.drawer.ADraftActivity"
+            android:label="Drafts"
+            android:parentActivityName=".main.LandingScreenActivity" />
+        <activity android:name=".main.drawer.asent.NewViewUserResendActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.ac.ZAddACTemplateDetailsActivity"
+            android:label="Template Details"
+            android:parentActivityName=".main.drawer.anewtemp.ATemplateActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.ac.ZOneHeadingActivity"
+            android:label="Letter Heading Part 1"
+            android:parentActivityName=".main.drawer.anewtemp.ATemplateActivity" />
+            <!--android:parentActivityName=".main.drawer.anewtemp.ac.ZAddACTemplateDetailsActivity" />-->
+        <activity
+            android:name=".main.drawer.anewtemp.ac.ZTwoHeadingActivity"
+            android:label="Letter Heading Part 2"
+            android:parentActivityName=".main.drawer.anewtemp.ac.ZOneHeadingActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.ac.ZBodyActivity"
+            android:label="Salutation and Body"
+            android:parentActivityName=".main.drawer.anewtemp.ac.ZTwoHeadingActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.ac.ZClosingNSign"
+            android:label="Closing And Signature"
+            android:parentActivityName=".main.drawer.anewtemp.ac.ZBodyActivity" />
+        <activity
+            android:name=".main.drawer.anewtemp.ac.ZViewProgressActivity"
+            android:label="View Template"
+            android:parentActivityName=".main.drawer.anewtemp.ac.ZClosingNSign" />
+        <activity
+            android:name=".main.drawer.anewtemp.ac.ZValidateTemplateActivity"
+            android:label="Validate Template"
+            android:parentActivityName=".main.drawer.anewtemp.ac.ZViewProgressActivity" />
+    </application>
+
+</manifest>

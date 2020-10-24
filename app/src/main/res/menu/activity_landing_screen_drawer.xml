@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_drawer_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/ic_drawer_notification"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/rep"
+            android:icon="@drawable/ic_drawer_representative"
+            android:title="Representatives" />
+        <item
+            android:id="@+id/template"
+            android:icon="@drawable/ic_drawer_template"
+            android:title="Templates" />
+    </group>
+
+    <item android:title="Letters">
+        <menu>
+            <!--
+            <item
+                android:id="@+id/draft"
+                android:icon="@drawable/ic_drawer_drafts"
+                android:title="Drafts" />
+            -->
+            <item
+                android:id="@+id/receive"
+                android:icon="@drawable/ic_drawer_receive"
+                android:title="Received" />
+            <item
+                android:id="@+id/sent"
+                android:icon="@drawable/ic_drawer_sent"
+                android:title="Sent" />
+        </menu>
+    </item>
+
+    <item android:title="Miscellaneous">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_drawer_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

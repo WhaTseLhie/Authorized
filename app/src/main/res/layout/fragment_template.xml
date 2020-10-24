@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".main.TemplateFragment">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:background="@color/blue"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtSort"
+            android:padding="15dp"
+            android:layout_weight="7"
+            android:hint="Sort by"
+            android:textColor="@color/black"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:id="@+id/cboSort"
+            android:padding="15dp"
+            android:layout_weight="3"
+            android:layout_marginStart="1dp"
+            android:background="@color/white"
+            android:entries="@array/letterType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

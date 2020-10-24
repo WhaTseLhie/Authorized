@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@color/blue">
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="TEMPLATE TYPE"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/cboSort"
+        android:padding="15dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/white"
+        android:entries="@array/letterType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_margin="5dp"
+            android:text="SAVE"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/style_button_new_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_margin="5dp"
+            android:text="CANCEL"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/style_button_disapprove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.drawer.anewtemp.ac.ZClosingNSign">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Your letter will look like this:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterHeading"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- ///////////  CLOSING AND SIGNATURE    //////////// -->
+        <TextView
+            android:textSize="14sp"
+            android:text="Letter Closing"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterClosing"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="[CLOSING]"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="What is your name?"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterSign"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:text="[SIGNATURE]"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="Digital Signature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtLetterSenderName"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:text="[YOUR NAME]"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/style_edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_root"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.drawer.anewtemp.NewUserAddTemplateActivity">
+
+    <EditText
+        android:id="@+id/txtLetterContent"
+        android:inputType="textMultiLine"
+        android:gravity="left"
+        android:textSize="22sp"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        android:overScrollMode="always"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:scrollbarStyle="insideInset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/template"
+            android:icon="@drawable/ic_drawer_template"
+            android:title="Template" />
+        <item
+            android:id="@+id/ot"
+            android:icon="@drawable/ic_opening_tag"
+            android:title="Salutation" />
+        <item
+            android:id="@+id/ct"
+            android:icon="@drawable/ic_closing_tag"
+            android:title="Closing" />
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/ic_payment"
+            android:title="Payment" />
+        <item
+            android:id="@+id/vuser"
+            android:icon="@drawable/ic_all_users"
+            android:title="View All Users" />
+        <item
+            android:id="@+id/vsent"
+            android:icon="@drawable/ic_drawer_sent"
+            android:title="View All Transactions" />
+        <item
+            android:id="@+id/db"
+            android:icon="@drawable/ic_drawer_db"
+            android:title="View Database" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_drawer_logout"
+            android:title="Logout" />
+    </group>
+</menu>
